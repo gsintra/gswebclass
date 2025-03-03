@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background-color: black;
+color: white;
+
+}
+
+iframe{
+    width: 50%;
+    margin: 100px 50px 100px 50px;
+}
+
+/* ----- Header */
+
+header{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top:55px;
+    left: 0;
+    z-index: 2000;
+}
+
+h1{
+    font-family: "Gochi Hand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 68px; 
+    margin: 20px 0 20px 0;
+    right: 100px;
+    color: rgb(1, 39, 75);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* poem section */
+
+#lyric{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(lyric-images/13581320_1598256305312427676169395120358.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    overflow:hidden;
+    /*have to put position relative if absolute is in the child*/
+}
+
+.flex-area{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p{
+/* this is paragraph specifcally the stuff in the class name text */
+    font-family: "Fuzzy Bubbles", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px; 
+    line-height: 1;
+    color:rgb(255, 255, 255);
+    opacity: 100%;
+    margin: 0 0 20px 0;
+}
+
+.dance{
+    display: inline-block;
+    /*span not a block like div and stuff so this makes u treat like one*/
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 72, 195);
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+    transition: all 3s;
+}
+
+.dance:hover{
+    background-color:  rgb(51, 72, 195);
+    color: rgb(255, 255, 255);
+    cursor: crosshair;
+    transform: rotate(360deg);
+
+}
+
+.delight{
+    color: rgb(241, 62, 127);
+    opacity: 0;
+    transition: all 2s;
+    /*transition put on the one bf the hover*/
+}
+
+.delight:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.feel{
+    display: inline-block;
+    background-color: rgb(1, 76, 224);
+    color: beige;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+    transition: all 2s;
+}
+
+.feel:hover{
+    cursor: pointer;
+    opacity: 0.2;
+    transform: translate(100px,0) scale(3,3);
+}
+
+
+.love{
+    color: rgb(241, 62, 127);
+    opacity: 0;
+    transition: all 2s;
+    /*transition put on the one bf the hover*/
+}
+
+.love:hover {
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.eyes{
+    display: inline-block;
+    background-color: rgb(1, 76, 224);
+    color: beige;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+    transition: all 2s;
+}
+
+.eyes:hover{
+cursor: pointer;
+opacity: 0;
+transform: translate(200px,0) scale(3,3);
+}
+
+.text{
+    /* can only use if u have position then u can use z index to make sure it is on top of da moons*/
+    position: relative;
+    z-index:9999;
+}
+
+.star3{
+    height: 600px;
+    width:600px;
+    position: absolute;
+    top:0;
+    right:0;
+    animation: fademoon 10s 3s infinite alternate;
+}
+
+@keyframes fademoon {
+    0% {transform:scale(1,1);
+        opacity:1}
+    100% {transform: scale(.3,.3);
+        opacity: .2;}
+}
+
+.star4{
+    height: 600px;
+    width:600px;
+    position: absolute;
+    left: 0px;
+    top:0;
+    animation: fademoon 10s 3s infinite alternate;
+}
+
+@keyframes fademoon {
+    0% {transform: scale(.3,.3);
+        opacity: .2;}
+    100% {transform:scale(1,1);
+            opacity:1}
+}
