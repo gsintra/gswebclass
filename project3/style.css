@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    color: antiquewhite;
+    font-family: "Ms Madi", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 120px;
+    text-align: center;
+       
+}
+h1{
+    color: antiquewhite;
+    font-family: "Ms Madi", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    background-color: rgba(131, 70, 70, 0.36);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+       
+}
+h4{
+    color: antiquewhite;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:45px;
+    text-align: center;
+    background-color: rgba(131, 70, 70, 0.36);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+h2{
+    color: antiquewhite;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:45px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+.btn {
+    display: block;
+    background-color: brown;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 50px;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 1s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(230, 150, 150);
+    color: rgb(0, 0, 0);
+}
+
+#intro {
+    background-image: url(cook-images/darktablecloth.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#page7 {
+    background-image: url(cook-images/7.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(131, 70, 70, 0.979);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#page8 {
+    background-image: url(cook-images/8.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(131, 70, 70, 0);
+}
+
+#page9 {
+    background-image: url(cook-images/9.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.div1 { 
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%; 
+}
+
+.div2 {  
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%; 
+}
+
+.div3 { 
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;  
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+}
+#footer{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+audio {
+    margin-bottom: 100px;
+}
+
+
+h5{
+    color: antiquewhite;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:45px;
+    text-align: center;
+    background-color: rgba(131, 70, 70, 0.824);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+h6{
+    color: antiquewhite;
+    font-family: "Ms Madi", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 120px;
+    text-align: center;
+    background-color: rgba(131, 70, 70, 0.824);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+       
+}
